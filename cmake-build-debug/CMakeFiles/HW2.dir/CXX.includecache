@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Nate/CLionProjects/HW2/Analyst.h
+History.h
+C:/Users/Nate/CLionProjects/HW2/History.h
+fstream
+-
+
+C:/Users/Nate/CLionProjects/HW2/History.h
+PurchaseSale.h
+C:/Users/Nate/CLionProjects/HW2/PurchaseSale.h
+vector
+-
+
+C:/Users/Nate/CLionProjects/HW2/PurchaseSale.h
+string
+-
+
+C:/Users/Nate/CLionProjects/HW2/main.cpp
+iostream
+-
+iomanip
+-
+Analyst.h
+C:/Users/Nate/CLionProjects/HW2/Analyst.h
+
