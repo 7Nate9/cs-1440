@@ -94,7 +94,7 @@ void generateComparison(std::string outputFilePath, std::vector<Analyst*> analys
     for (int i = 0; i < analysts.size(); i++)
     {
         fout << std::setw(13) << std::right << std::fixed << std::setprecision(2);
-        fout << analysts[i]->m_tradeHistory.getSeedMoney();
+        fout << static_cast<float>(analysts[i]->m_tradeHistory.getSeedMoney()) / 100;
         fout << std::setw(1) << "|";
     }
 
@@ -105,7 +105,7 @@ void generateComparison(std::string outputFilePath, std::vector<Analyst*> analys
     for (int i = 0; i < analysts.size(); i++)
     {
         fout << std::setw(13) << std::right << std::fixed << std::setprecision(2);
-        fout << analysts[i]->m_tradeHistory.getTotalProfitLoss();
+        fout << static_cast<float>(analysts[i]->m_tradeHistory.getTotalProfitLoss()) / 100;
         fout << std::setw(1) << "|";
     }
 
@@ -116,7 +116,7 @@ void generateComparison(std::string outputFilePath, std::vector<Analyst*> analys
     for (int i = 0; i < analysts.size(); i++)
     {
         fout << std::setw(13) << std::right << std::fixed << std::setprecision(2);
-        fout << analysts[i]->m_tradeHistory.getTotalProfitLossPerDay();
+        fout << static_cast<float>(analysts[i]->m_tradeHistory.getTotalProfitLossPerDay()) / 100;
         fout << std::setw(1) << "|";
     }
 
@@ -160,7 +160,7 @@ void generateComparison(std::string outputFilePath, std::vector<Analyst*> analys
         for (int j = 0; j < analysts.size(); j++)
         {
             fout << std::setw(13) << std::right << std::fixed << std::setprecision(2);
-            fout << analysts[j]->m_tradeHistory.getTotalProfitLossPerStock(symbolList[i]);
+            fout << static_cast<float>(analysts[j]->m_tradeHistory.getTotalProfitLossPerStock(symbolList[i])) / 100;
             fout << std::setw(1) << "|";
         }
 
